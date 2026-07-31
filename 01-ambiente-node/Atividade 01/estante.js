@@ -12,5 +12,13 @@ autor: "Lynn Painter",
 preco: 49.78,
 estoque: 15,
 };
+
+const livro3 = {
+titulo: "Táticas do amor",
+autor: "Sarah Adams",
+preco: 24.90,
+estoque: 9,
+};
+
 // Esta linha entrega os dois livros para os outros arquivos usarem
-module.exports = { livro1, livro2 };
+module.exports = { livro1, livro2, livro3 };
