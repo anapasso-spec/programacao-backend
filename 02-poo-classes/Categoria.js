@@ -24,9 +24,17 @@ return;
 this.#nome = novoNome;
 }
 
+set descricao(novaDescricao) {
+if (novoNome.length < 5) {
+console.log("ERRO: A descrição precisa de pelo menos 5 letras.");
+return;
+}
+this.#descricao = novaDescricao;
+}
+
 descrever() {
 console.log("Categoria: " + this.#nome);
-console.log("Descrição: " + this.descricao);
+console.log("Descrição: " + this.#descricao);
 }
 }
 
