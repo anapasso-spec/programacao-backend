@@ -6,6 +6,8 @@ class Categoria {
 constructor(nome, descricao) {
 this.#nome = nome;
 this.#descricao = descricao;
+this.#totalDeLivros = 0; 
+
 
 }
 
@@ -14,6 +16,10 @@ return this.#nome;
 }
 get descricao() {
 return this.#descricao;
+}
+
+get totalDeLivros() {
+return this.#totalDeLivros;
 }
 
 set nome(novoNome) {
@@ -35,6 +41,7 @@ this.#descricao = novaDescricao;
 descrever() {
 console.log("Categoria: " + this.#nome);
 console.log("Descrição: " + this.#descricao);
+console.log("Total de livros: " + this.#totalDeLivros);
 }
 }
 
